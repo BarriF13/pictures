@@ -12,7 +12,9 @@ export class SearchBar extends Component {
  //2- changing function to arrow function do the binding  this.sate.term = this.state.bind(this);
   onFormSubmit=(e)=>{
     e.preventDefault();
-    console.log(this.state.term);
+    // console.log(this.state.term);
+   //becasue we are in class component we need to refer to it with this -- and we prop upping
+    this.props.onSubmit(this.state.term)
   }
   //3- third way of binding this.state.term -- 
   // onFormSubmit(e){
