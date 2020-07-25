@@ -35,7 +35,7 @@ export class SearchBar extends Component {
           //input already know the value but we put it down again
           value={this.state.term}
           // ** 1- onChange={this.onInputChange} 2- e will call 3- data will pass tp value on the line up because it keep changing the state by setState method
-          onChange={ e => this.setState({ term: e.target.value.toUpperCase() })}
+          onChange={ e => this.setState({ term: e.target.value })}
           />
        
           </div>  
